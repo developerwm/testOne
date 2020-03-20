@@ -1,0 +1,54 @@
+PODS:
+  - Alamofire (4.9.1)
+  - AlamofireObjectMapper (5.2.1):
+    - Alamofire (~> 4.7)
+    - ObjectMapper (~> 3.4)
+  - Kingfisher (5.13.2):
+    - Kingfisher/Core (= 5.13.2)
+  - Kingfisher/Core (5.13.2)
+  - MockURLSession (2.0.0)
+  - ObjectMapper (3.5.1)
+  - RxCocoa (5.1.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.0)
+  - SwiftHTTP (3.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireObjectMapper (~> 5.2.1)
+  - Kingfisher
+  - MockURLSession
+  - ObjectMapper
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SwiftHTTP (~> 3.0.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireObjectMapper
+    - Kingfisher
+    - MockURLSession
+    - ObjectMapper
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftHTTP
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
+  MockURLSession: 41687ddcb52d4ce5e1ecc0e910f15060c5a7c527
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
+  RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
+  SwiftHTTP: e94f1aa8cde58637dcc0100f6349de31a3337fde
+
+PODFILE CHECKSUM: 91ef9ad367fbe7a02b861e24187577b7929f4cea
+
+COCOAPODS: 1.8.4

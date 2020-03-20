@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-testJobOneTests/Pods-testJobOneTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/MockURLSession/MockURLSession.framework
+${BUILT_PRODUCTS_DIR}/SwiftHTTP/SwiftHTTP.framework

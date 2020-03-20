@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aK7-di-0ie">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="JFz-cf-hIP">
+            <objects>
+                <navigationController id="aK7-di-0ie" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sqi-1i-OMG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="271-FH-Pnf" kind="relationship" relationship="rootViewController" id="sPv-i3-U5d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0AN-RS-WRU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1208" y="77"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="0Q2-ie-JcV">
+            <objects>
+                <viewController id="271-FH-Pnf" customClass="HomeVC" customModule="testJobOne" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dIB-Tc-Yxj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6zy-Gf-4ex">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SI3-2d-s5B" firstAttribute="trailing" secondItem="6zy-Gf-4ex" secondAttribute="trailing" id="7aw-YY-ec3"/>
+                            <constraint firstItem="6zy-Gf-4ex" firstAttribute="top" secondItem="SI3-2d-s5B" secondAttribute="top" id="flH-M8-aMS"/>
+                            <constraint firstItem="SI3-2d-s5B" firstAttribute="bottom" secondItem="6zy-Gf-4ex" secondAttribute="bottom" id="kGV-uf-2Ye"/>
+                            <constraint firstItem="6zy-Gf-4ex" firstAttribute="leading" secondItem="SI3-2d-s5B" secondAttribute="leading" id="lj5-uI-ISS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SI3-2d-s5B"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dB6-fo-YBI">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="sort" id="GlN-vu-f4H">
+                            <connections>
+                                <action selector="actionSort:" destination="271-FH-Pnf" id="rDb-c9-z46"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="6zy-Gf-4ex" id="hbN-C4-jtN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2YZ-Cq-Szl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-430" y="76"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sort" width="256" height="256"/>
+    </resources>
+</document>
