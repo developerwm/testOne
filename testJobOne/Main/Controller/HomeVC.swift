@@ -52,7 +52,7 @@ class HomeVC: UIViewController {
         picker.dataSource = self
         vc.view.addSubview(picker)
         
-        let editRadiusAlert = UIAlertController(title: "Choose distance", message: "", preferredStyle: UIAlertController.Style.alert)
+        let editRadiusAlert = UIAlertController(title: "Choose", message: "", preferredStyle: UIAlertController.Style.alert)
         editRadiusAlert.setValue(vc, forKey: "contentViewController")
         editRadiusAlert.addAction(UIAlertAction(title: "Done", style: .default, handler: { action in
             self.actionSort()
